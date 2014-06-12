@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../jQuery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../simpen.min.js"></script>
+<style>
+#simpen {
+	width:700px;
+	height:500px;
+}
+</style>
+</head>
+<body>
+<textarea id="simpen"></textarea>
+
+<script type="text/javascript">
+$(function() {
+	$('#simpen').simpen({
+		skinPath : '../skins/default',
+		cssFile : '../css/document.css',
+		uploadPath : 'upload.php'
+	});
+})
+</script>
+</body>
+</html>
