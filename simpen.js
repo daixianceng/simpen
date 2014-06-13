@@ -55,6 +55,8 @@
 			// 给simpen穿上衣服，给窗口送去衣服
 			$simpen.before('<link rel="stylesheet" type="text/css" href="' + skinPath + '/css/main.css' + '">');
 			var $body = $simpen.find('.simpenFrame').contents().find('head').append('<link rel="stylesheet" type="text/css" href="' + cssFile + '">').next('body');
+			// 将域中的代码转移到窗口中
+			$body.html($this.val());
 
 			// 激活的当前标签，默认body
 			var $activeTag = $body;
